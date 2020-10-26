@@ -1,15 +1,29 @@
 // FizzBuzz
 // ciclo for che stampa i numeri da 1 a 100
 
-var numeriArray = [];
-for (var i = 0; i < 100; i++) {
-  numeriArray.push(i + 1 + '<br>');
+for (var i = 1; i < 101; i++) {
+  var multiplo3 = i % 3
+  var multiplo5 = i % 5
+
+  if (multiplo3 !== 0) {
+    console.log(i);
+  }
+
+  // if (multiplo5 !== 0) {
+  //   console.log(i);
+  // }
+
+  if (multiplo3 == 0) {
+    console.log("Fizz");
+  }
+
+  if (multiplo5 == 0) {
+    console.log('Buzz');
+  }
+  // if (multiplo3 == 0) && (multiplo5 == 0) {
+  //   console.log('multiplo sia di 5 che di 3');
+  // }
 }
-var selezione = document.getElementById('output').innerHTML = numeriArray;
-console.log(numeriArray);
-
-
-
 
 // Scrivi un programma che stampi i numeri da 1 a 100,
 // ma per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi “Buzz”.
