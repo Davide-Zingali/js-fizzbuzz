@@ -1,11 +1,12 @@
 // FizzBuzz
 // ciclo for che stampa i numeri da 1 a 100
-var selezione = document.getElementById('output');
 
+var numeriArray = [];
 for (var i = 0; i < 100; i++) {
-  selezione.innerHTML = i + 1;
-  console.log(i + 1);
+  numeriArray.push(i + 1 + '<br>');
 }
+var selezione = document.getElementById('output').innerHTML = numeriArray;
+console.log(numeriArray);
 
 
 
